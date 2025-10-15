@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		92C328782E9ED6D40060737C /* Main */ = {
+		92C328782E9ED6D40060737C /* BauhausClockView */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Main;
+			path = BauhausClockView;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		92C3286C2E9ED6D40060737C = {
 			isa = PBXGroup;
 			children = (
-				92C328782E9ED6D40060737C /* Main */,
+				92C328782E9ED6D40060737C /* BauhausClockView */,
 				92C328772E9ED6D40060737C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,7 +72,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				92C328782E9ED6D40060737C /* Main */,
+				92C328782E9ED6D40060737C /* BauhausClockView */,
 			);
 			name = OpenSourceBauhausClock;
 			packageProductDependencies = (
