@@ -1,94 +1,72 @@
-script_key="@lainlainlainn";
-getgenv().howl = {
-    Options = {
-        Type = "Target",
-        UpdateNotification = true,
-        Keybind = {
-            Aimbot = "E",
-            Resolver = "C",
-            AutoBuyKeyBind = "Z",
-            AntiAimKeybind = "P",
-            Macro = "X",
+script_key="@lain43";
+getgenv().Howl = {
+    ["Global"] = {
+        ["GlobalChecks"] = {
+            ['KnockedChecks'] = true,
+            ['WallCheck'] = true
+        },
+        ["Keybinds"] = {
+            ['AimbotKeybind'] = "E",
+            ['AutoBuyKeybind'] = "Z",
         },
     },
-    Combat = {
-        Aimbot = {
-            Prediction = 0.132,
-            Smoothness = 0.060,
-            Part = "Head",
-            PredictionAdjuster = true,
-            MultipleParts = {
-                Enabled = false,
-                Parts = { "Head", "UpperTorso", "HumanoidRootPart", "LowerTorso" },
-            },
-            Shake = {
-                Enabled = false,
-                Amount = 5,
-            },
-            MouseTp = {
-                Enabled = false,
-                Smoothness = 0.0300,
-                Prediction = 0.134151,
-                Part = "HumanoidRootPart",
-            },
-        },
-        Silent = {
-            Prediction = 0.1452,
-            Part = "HumanoidRootPart",
-            PredictionAdjuster = false,
-            MultipleParts = {
-                Enabled = false,
-                Parts = { "Head", "UpperTorso", "HumanoidRootPart", "LowerTorso" },
-            },
-            Offsets = {
-                Jump = { Amount = -1.50 },
-                Fall = { Amount = 0 },
-            },
+    ['Aimbot'] = {
+        ['Prediction'] = 0.1125,
+        ['Smoothness'] = 0.0235,
+        ['Part'] = "Head",
+        ['PredictionAdjuster'] = true,
+        ['Predict'] = true,
+        ['Smooth'] = true,
+        ['Shake'] = false,
+        ["ShakeLevels"] = {
+            ['ValueX'] = 1,
+            ['ValueY'] = 1,
+            ['ValueZ'] = 0
         },
     },
-    AntiAim = {
-        Enabled = true,
-        Velocity = -5,
-    },
-    PredictionAdjuster = {
-        VelocityThreshold = 250,
-    },
-    Misc = {
-        Checks = {
-            KnockedChecks = true,
-            TargetDeath = false,
-            PlayerDeath = true,
-            WallCheck = false,
-            Resolver = {
-                Enabled = false,
-                Notification = true,
-            },
-        },
-        Macro = {
-            Enabled = true,
-            Speed = 0.065,
-            Type = "Electron",
-        },
-        Autobuy = {
-            ProximityDistance = 10,
-        },
-        Visuals = {
-            EspEnabled = true,
-            EspColor = Color3.new(0.831373, 0.043137, 0.043137),
-            Distance = 30000,
-            DisplayName = true,
-            EspTransparency = false,
+    ["Silent"] = {
+        ['Prediction'] = 0.139,
+        ['Part'] = "Head",
+        ['PredictionAdjuster'] = true,
+        ['ClosestPart'] = true,
+        ['Enabled'] = true,
+        ["SilentFOV"] = {
+            ['Visible'] = false,
+            ['Radius'] = 200,
+            ['SilentFOVColor'] = Color3.new(0.329412, 0.835294, 0.901961),
+            ['Thickness'] = 0.1,
+            ['StickyFov'] = false
         },
     },
-    Cframe = {
-        Options = {
-            DefaultSpeed = 100,
-            Keybinds = {
-                ToggleMovement = "J",
-            },
-            Enable = true,
+    ["MouseTeleportation"] = {
+        ['Enabled'] = true,
+            ['Part'] = "Head",
+            ['Smothness'] = 0.3221214
+        },  
+        ["PredictionAdjuster"] = {
+            ['VelocityThreshold'] = 250, 
+
         },
+        ["AutoBuyArea"] = {
+            ['Distance'] = 10,
+        },
+        ["Macro"] = {
+            ['Enabled'] = false,
+            ['KeyBind'] = "Q",
+            ['Type'] = "Electron", -- ['Electron'] ['Third']
+        },
+        ['Miscellaneous'] = {
+        ['EspSection'] = {
+            ['ChamsESP'] = false,
+            ['ChamsESPKeybind'] = Enum.KeyCode.T,
+            ['ChamsColor1'] = Color3.fromRGB(000, 000, 000),
+            ['ChamsColor2'] = Color3.fromRGB(000, 000, 000),
+        },
+    },
+    ["Options"] = {
+        ["UpdateNotification"] = true,
+    
+            
     },
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d881d0f41e7265cf8c77969656115a2d.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e63852ccbac5f50712132013fea92310.lua"))()
